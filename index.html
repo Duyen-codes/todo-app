@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo app</title>
+  </head>
+  <body>
+    <main>
+      <section class="top-img">
+        <h1>Todo</h1>
+        <btn class="btn-tgl"></btn>
+      </section>
+
+      <ol class="instructions">
+        <li>Enter text into the input field to add items to your list.</li>
+        <li>Click the item to mark it as complete.</li>
+        <li>Click the "X" to remove the item from your list.</li>
+      </ol>
+      <form class="type-input add-todo-form">
+        <button
+          class="todo__button-input add-btn"
+          aria-label="Add New Task"
+          type="submit"
+        >
+          +
+        </button>
+        <input
+          id="user-input"
+          type="text"
+          class="todo-input"
+          placeholder="Create a new todo..."
+        />
+      </form>
+
+      <ul class="todos-list">
+        <li class="todo-item">
+          <input class="todo" id="todo" type="checkbox" />
+          <label class="input-text" for="todo">
+            Complete online Javascript course
+          </label>
+          <img class="cross-icon" src="/images/icon-cross.svg" alt="" />
+        </li>
+      </ul>
+
+      <!-- Remarks  -->
+      <section class="remarks">
+        <span class="items-left">items left</span>
+
+        <span class="clear-completed">Clear Completed</span>
+      </section>
+
+      <div class="filters">
+        <span class="filter-all">All</span>
+        <span class="filter-active">Active</span>
+        <span class="filter-completed">Completed</span>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
