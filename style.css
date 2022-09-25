@@ -12,14 +12,16 @@ html {
   font-size: 62.5%;
   font-family: "Josefin Sans", sans-serif;
   line-height: 1.8;
+  overflow-y: scroll;
 }
 
 body {
-  font-size: 1.8rem;
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
   --btn-tgl-bg: url("images/icon-sun.svg");
   font-size: clamp(1.8rem, 2.8vw, 2.5rem);
   background-color: var(--clr-body-background);
-  background-image: var(--bg-img);
   background-repeat: no-repeat;
   color: var(--clr-todo-text);
   position: relative;
@@ -53,16 +55,8 @@ ul {
   list-style: none;
 }
 
-body {
-  min-width: 375px;
-}
-
 main {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
   padding: 2rem;
-  overflow: scroll;
   min-width: 375px;
   max-width: 50vw;
 }
